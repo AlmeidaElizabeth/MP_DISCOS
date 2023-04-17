@@ -16,5 +16,11 @@ namespace DISCOS
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            DISCOS_DATOS datos = new DISCOS_DATOS();
+            dgv.DataSource = datos.Listar();
+        }
     }
 }
